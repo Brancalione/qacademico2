@@ -1,5 +1,46 @@
-/* Tela de Login */
-.login-container {
+:root {
+    --primary-color: #28a745; /* Verde */
+    --background-color: #f9f9f9; /* Cor de fundo padrão */
+    --text-color: #333; /* Cor do texto padrão */
+}
+
+/* Menu de Navegação */
+.header {
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 10px 0;
+}
+
+.navbar {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-list a:hover {
+    text-decoration: underline;
+}
+
+/* Tela Inicial */
+.home-container {
     width: 100%;
     max-width: 400px;
     margin: 50px auto;
@@ -11,41 +52,55 @@
     text-align: center;
 }
 
-.login-container h2 {
-    color: var(--primary-color);
+.home-container h2 {
+    color: var(--primary-color); /* Verde para o título */
     margin-bottom: 1rem;
 }
 
-.login-container .form-group {
-    margin-bottom: 1.2rem;
+.home-container p {
+    color: var(--text-color);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
 }
 
-.login-container input[type="email"],
-.login-container input[type="password"] {
-    padding: 10px;
-    border: 1px solid #ced4da;
+.button-group .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: var(--primary-color); /* Botão verde */
+    color: #ffffff;
+    text-decoration: none;
     border-radius: 4px;
     font-size: 1rem;
 }
 
-.login-container .button {
+.button-group .button:hover {
+    background-color: #218838; /* Tom mais escuro de verde para hover */
+}
+
+/* Seções de Informações */
+.info-section {
     width: 100%;
-    margin-top: 10px;
-    background-color: var(--primary-color);
-    color: #ffffff;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--background-color);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.login-container .register-link {
-    margin-top: 1rem;
-    font-size: 0.9rem;
+.info-section h3 {
+    color: var(--primary-color); /* Verde para os títulos das seções */
+    margin-bottom: 1rem;
+}
+
+.info-section p, .info-section ul {
     color: var(--text-color);
+    font-size: 1rem;
 }
 
-.login-container .register-link a {
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-.login-container .register-link a:hover {
-    text-decoration: underline;
+.info-section ul {
+    padding-left: 20px;
+    list-style-type: disc;
 }

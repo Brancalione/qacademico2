@@ -3,40 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Tela de Login</title>
+    <title>Sistema de Academia - Tela Inicial</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="login-container">
-        <h2>Login</h2>
-        <form>
-            <div class="form-group">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Senha:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit" class="button">Entrar</button>
-        </form>
-        <p class="register-link">Não tem uma conta? <a href="#">Registre-se</a></p>
+    <!-- Menu de Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo da Página Inicial -->
+    <div class="home-container">
+        <h2>Bem-vindo ao Sistema de Academia</h2>
+        <p>Gerencie seus treinos, acompanhe seu progresso e melhore sua saúde com nosso sistema completo para academias.</p>
+        
+        <div class="button-group">
+            <a href="login.html" class="button">Login</a>
+            <a href="components/header.html" class="button">Cadastre-se</a>
+        </div>
     </div>
-    <title>Home - Sistema Acadêmico</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    
-    <div id="header"></div>
 
-    <main>
-        <h1>Bem-vindo ao Sistema Acadêmico</h1>
-        <p>Essa é a página inicial do sistema, onde você poderá acessar suas funcionalidades.</p>
-    </main>
+    <!-- Sobre a Academia -->
+    <section id="servicos" class="info-section">
+        <h3>Nossos Serviços</h3>
+        <p>Oferecemos acompanhamento personalizado, planos de treino exclusivos e suporte completo para você alcançar seus objetivos.</p>
+    </section>
 
-    <div id="footer"></div>
+    <!-- Planos -->
+    <section id="planos" class="info-section">
+        <h3>Planos Disponíveis</h3>
+        <ul>
+            <li>Plano Básico</li>
+            <li>Plano Plus</li>
+            <li>Plano Premium</li>
+        </ul>
+    </section>
 
-    <script src="assets/js/loadComponents.js"></script>
+    <!-- Contato -->
+    <section id="contato" class="info-section">
+        <h3>Contato</h3>
+        <p>Entre em contato conosco pelo e-mail: contato@academia.com.br ou pelo telefone: (11) 1234-5678.</p>
+    </section>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
